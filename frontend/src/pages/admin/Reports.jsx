@@ -135,8 +135,7 @@ const Reports = () => {
 
       <AnimatePresence>
         {selectedReport && (
-          <div className="fixed inset-0 bg-black/40 backdrop-blur-md z-50 flex items-center justify-center p-4">
-            <motion.div initial={{ scale: 0.95, opacity: 0, y: 10 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0, y: 10 }} className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative border border-white">
+<div className="fixed inset-0 md:pl-72 bg-black/40 backdrop-blur-md z-50 flex items-center justify-center p-4">           <motion.div initial={{ scale: 0.95, opacity: 0, y: 10 }} animate={{ scale: 1, opacity: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0, y: 10 }} className="bg-white/95 backdrop-blur-xl rounded-3xl p-6 sm:p-8 max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative border border-white">
               <button onClick={() => setSelectedReport(null)} className="absolute top-5 right-5 text-gray-400 hover:text-gray-900 bg-gray-100/80 hover:bg-gray-200 p-2 rounded-xl transition-all shadow-sm"><X size={20} strokeWidth={2.5}/></button>
               
               <div className="flex items-center gap-3 mb-6 border-b border-gray-100/80 pb-5">
